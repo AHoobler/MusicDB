@@ -1,0 +1,16 @@
+﻿body {
+    background: url('images/cassett.jpeg') no-repeat center center ;
+    text-align: center;
+    color: white;
+}
+
+.col-md-3 {
+    color: white;
+    background: rgba(57, 136, 169, 0.45);
+    margin: 5px;
+}
+
+.row{
+    align-items: center;
+
+}

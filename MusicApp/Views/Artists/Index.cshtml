@@ -1,0 +1,38 @@
+﻿<link href="~/Content/ArtistStyle.css" rel="stylesheet" />
+
+@model IEnumerable<MusicApp.Models.Artist>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="container">
+<h2>Artists</h2>
+
+
+
+
+@foreach (var item in Model)
+{
+    <div class="col-md-3">
+        <h2>
+            @Html.DisplayFor(modelItem => item.ArtistName)
+        </h2>
+        <p>
+            @Html.DisplayNameFor(model => model.Genre): @Html.DisplayFor(modelItem => item.Genre)
+        </p>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ArtistID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ArtistID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ArtistID })
+        </p>
+    </div>
+}
+
+<div class="col-md-12">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+</div>
+</div> 

@@ -1,0 +1,14 @@
+﻿body {
+    background: url('images/crowd.jpeg') no-repeat center center;
+    text-align: center;
+}
+
+.jumbotron {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 100px;
+}
+.thumbnail {
+    background: rgba(255, 255, 255, 0.6);
+    width: 350px;
+    text-align: center;
+}

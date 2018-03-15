@@ -1,0 +1,65 @@
+﻿@model MusicApp.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Album Details</h2>
+
+<div>
+    
+    <div class="row">
+        <div>
+           @Html.DisplayNameFor(model => model.Photo)" 
+        </div>
+
+        <div>
+            <img src=" @Html.DisplayFor(model => model.Photo)" />
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.ReleaseYear)
+        </div>
+
+        <div>
+            @Html.DisplayFor(model => model.ReleaseYear)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.WonAward)
+        </div>
+
+        <div">
+            @Html.DisplayFor(model => model.WonAward)
+        </div">
+
+        <div>
+            @Html.DisplayNameFor(model => model.BiggestHit)
+        </div>
+
+        <div>
+            @Html.DisplayFor(model => model.BiggestHit)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.TrackList)
+        </div>
+
+        <div>
+            @Html.DisplayFor(model => model.TrackList)
+        </div>
+
+        <div>
+            @Html.DisplayNameFor(model => model.Artist.ArtistName)
+        </div>
+
+        <div>
+            @Html.DisplayFor(model => model.Artist.ArtistName)
+        </div>
+
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AlbumID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
